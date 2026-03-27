@@ -1,0 +1,42 @@
+:root {
+    --primary-black: #1a1a1a;
+    --accent-red: #d32f2f;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: white;
+    border-bottom: 3px solid var(--primary-black);
+}
+
+.logo span { color: var(--accent-red); }
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem 5%;
+}
+
+.article-card {
+    background: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
